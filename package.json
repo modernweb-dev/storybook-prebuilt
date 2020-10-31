@@ -54,7 +54,7 @@
     "@storybook/preact": "6.0.28",
     "@storybook/theming": "6.0.28",
     "@storybook/web-components": "6.0.28",
-    "@web/dev-server": "0.0.10",
+    "@web/dev-server": "0.0.15",
     "babel-loader": "8.1.0",
     "cjs-module-lexer": "0.4.3",
     "deepmerge": "4.2.2",
