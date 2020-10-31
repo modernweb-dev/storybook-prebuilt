@@ -2,6 +2,8 @@ const getPresets = require('@storybook/core/dist/server/presets.js').default;
 
 const addons = ['@storybook/addon-essentials'];
 
+const managerPath = require.resolve('../src/manager.js')
+
 export async function gatherAddonEntries(framework) {
   const options = { configDir: __dirname, framework };
 
@@ -34,7 +36,7 @@ export function addonImports(framework) {
 
       if (id.startsWith('__generated__/manager.js')) {
         const managerImports = imports.manager.map(i => `import "${i}";`).join('');
-        return `import '@storybook/core/dist/client/manager/index.js'; ${managerImports}`;
+        return `export * from '${managerPath}'; ${managerImports}`;
       }
 
       return undefined;

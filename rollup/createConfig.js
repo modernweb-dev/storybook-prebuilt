@@ -21,6 +21,8 @@ export default framework => ({
     manager: '__generated__/manager.js',
   },
 
+  preserveEntrySignatures: 'allow-extension',
+
   output: {
     dir: '.',
     format: 'esm',
