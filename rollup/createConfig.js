@@ -18,10 +18,11 @@ import { addonImports } from './plugins/addonImports.js';
 export default framework => ({
   input: {
     [framework]: `src/${framework}.js`,
+    'addon-docs/blocks': '@storybook/addon-docs/blocks.js',
     manager: '__generated__/manager.js',
   },
 
-  preserveEntrySignatures: 'allow-extension',
+  // preserveEntrySignatures: 'allow-extension',
 
   output: {
     dir: '.',
