@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.1...v0.1.2) (2020-11-04)
+
+
+### Bug Fixes
+
+* hoist react dependencies ([46ecbb6](https://github.com/modernweb-dev/storybook-prebuilt/commit/46ecbb61b9757e8dea0b5a6fa13fb7a0f993d5ef))
+
 ### [0.1.1](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.0...v0.1.1) (2020-11-04)
 
 
