@@ -18,7 +18,7 @@ import { addonImports } from './plugins/addonImports.js';
 export default framework => ({
   input: {
     [framework]: `src/${framework}.js`,
-    'addon-docs/blocks': '@storybook/addon-docs/blocks.js',
+    'addon-docs/blocks': 'src/addon-docs/blocks.js',
     manager: '__generated__/manager.js',
   },
 
