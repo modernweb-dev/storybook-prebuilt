@@ -13,12 +13,6 @@
     "start:wc": "wds --node-resolve --app-index demo/wc/index.html --open",
     "start:preact": "wds --node-resolve --app-index demo/preact/index.html --open",
     "build": "rm -rf dist && NODE_ENV=production node --max-old-space-size=16384 node_modules/.bin/rollup -c rollup/rollup.config.js",
-    "lint:eslint": "eslint --ext .js,.html . --ignore-path .gitignore",
-    "format:eslint": "eslint --ext .js,.html . --fix --ignore-path .gitignore",
-    "lint:prettier": "prettier \"**/*.js\" --check --ignore-path .gitignore",
-    "format:prettier": "prettier \"**/*.js\" --write --ignore-path .gitignore",
-    "lint": "npm run lint:eslint && npm run lint:prettier",
-    "format": "npm run format:eslint && npm run format:prettier",
     "release": "standard-version && git push --follow-tags origin master && npm publish",
     "release:dry-run": "standard-version --dry-run"
   },
@@ -31,6 +25,7 @@
   ],
   "devDependencies": {
     "@babel/preset-env": "7.12.1",
+    "@mdx-js/react": "^1.6.19",
     "@rollup/plugin-alias": "3.1.1",
     "@rollup/plugin-commonjs": "16.0.0",
     "@rollup/plugin-inject": "4.0.2",
@@ -58,14 +53,11 @@
     "babel-loader": "8.1.0",
     "cjs-module-lexer": "0.5.0",
     "deepmerge": "4.2.2",
-    "eslint": "7.12.1",
     "htm": "3.0.4",
-    "husky": "1.3.1",
-    "lint-staged": "10.5.0",
     "lit-element": "2.4.0",
+    "lit-html": "1.3.0",
     "magic-string": "0.25.7",
     "preact": "10.5.5",
-    "lit-html": "1.3.0",
     "rollup": "2.32.1",
     "rollup-plugin-babel": "5.0.0-alpha.2",
     "rollup-plugin-node-builtins": "2.1.2",
@@ -73,27 +65,5 @@
     "rollup-plugin-terser": "7.0.2",
     "rollup-plugin-visualizer": "4.1.2",
     "standard-version": "9.0.0"
-  },
-  "eslintConfig": {
-    "extends": [
-      "@open-wc/eslint-config",
-      "eslint-config-prettier"
-    ],
-    "rules": {
-      "import/no-extraneous-dependencies": "off"
-    }
-  },
-  "prettier": "@open-wc/prettier-config",
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.js": [
-      "eslint --fix",
-      "prettier --write",
-      "git add"
-    ]
   }
 }
