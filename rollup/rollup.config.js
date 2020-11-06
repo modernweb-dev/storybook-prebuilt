@@ -20,7 +20,6 @@ export default {
   input: {
     "web-components": "src/web-components.js",
     preact: "src/preact.js",
-    "addon-docs/blocks": "src/addon-docs/blocks.js",
     manager: "__generated__/manager.js",
   },
 
@@ -46,6 +45,7 @@ export default {
         { name: "core-events", path: "@storybook/core-events" },
         { name: "theming", path: "@storybook/theming" },
         { name: "theming/create", path: "@storybook/theming/create" },
+        { name: "addon-docs/blocks", path: "@storybook/addon-docs/blocks" },
       ],
     }),
 
