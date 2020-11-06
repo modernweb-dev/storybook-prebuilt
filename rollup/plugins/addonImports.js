@@ -1,19 +1,16 @@
-const getPresets = require('@storybook/core/dist/server/presets.js').default;
+const getPresets = require("@storybook/core/dist/server/presets.js").default;
 
-const addons = ['@storybook/addon-essentials'];
+const addons = ["@storybook/addon-essentials"];
 
-const managerPath = require.resolve('../src/manager.js')
+const managerPath = require.resolve("../src/manager.js");
 
 export async function gatherAddonEntries(framework) {
   const options = { configDir: __dirname, framework };
 
   const presets = getPresets(addons, options);
-  const preview = await presets.apply('config', [], options);
-  const manager = await presets.apply('managerEntries', [], options);
-  const controlsI = manager.findIndex(e => e.includes('addon-controls'));
+  const preview = await presets.apply("config", [], options);
+  const manager = await presets.apply("managerEntries", [], options);
 
-  const result = manager.splice(controlsI, 1);
-  manager.unshift(...result);
   return { manager, preview };
 }
 
@@ -23,7 +20,7 @@ export function addonImports(framework) {
 
   return {
     resolveId(id) {
-      if (id.startsWith('__generated__')) {
+      if (id.startsWith("__generated__")) {
         return id;
       }
       return undefined;
@@ -34,8 +31,10 @@ export function addonImports(framework) {
         imports = await gatherAddonEntries(framework);
       }
 
-      if (id.startsWith('__generated__/manager.js')) {
-        const managerImports = imports.manager.map(i => `import "${i}";`).join('');
+      if (id.startsWith("__generated__/manager.js")) {
+        const managerImports = imports.manager
+          .map((i) => `import "${i}";`)
+          .join("");
         return `export * from '${managerPath}'; ${managerImports}`;
       }
 
@@ -46,9 +45,10 @@ export function addonImports(framework) {
       if (id === frameworkEntry) {
         const previewImports = imports.preview
           .map(
-            (path, i) => `import * as preset${i} from "${path}";registerPreviewEntry(preset${i});`,
+            (path, i) =>
+              `import * as preset${i} from "${path}";registerPreviewEntry(preset${i});`
           )
-          .join('');
+          .join("");
 
         return `${code}\n${previewImports}`;
       }
