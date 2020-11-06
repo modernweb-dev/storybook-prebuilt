@@ -51,7 +51,6 @@ export default function entrypoints(opts) {
   return {
     // add entrypoints to rollup
     options(rollupOptions) {
-      rollupOptions.input = {};
       for (const name of data.keys()) {
         rollupOptions.input[name] = `${PREFIX}${name}`;
       }
