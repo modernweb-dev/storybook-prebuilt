@@ -7,6 +7,7 @@ export { React, registerPreviewEntry, mdx };
 export {
   storiesOf,
   setAddon,
+  setCustomElements,
   addDecorator,
   addParameters,
   configure,
