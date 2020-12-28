@@ -22,4 +22,8 @@
 /preact.js*
 /web-components.js*
 /manager.js*
-/addon-docs/*
+/addon-docs*
+/addons.js*
+/api.js*
+/core-events*
+/theming*

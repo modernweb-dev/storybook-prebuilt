@@ -4,7 +4,7 @@ import replace from "@rollup/plugin-replace";
 import { terser } from "rollup-plugin-terser";
 import builtins from "rollup-plugin-node-builtins";
 import nodeGlobals from "rollup-plugin-node-globals";
-import babel from "rollup-plugin-babel";
+import babel from "@rollup/plugin-babel";
 import visualizer from "rollup-plugin-visualizer";
 import json from "@rollup/plugin-json";
 import inject from "@rollup/plugin-inject";
@@ -85,25 +85,6 @@ export default {
       },
     }),
 
-    // storybook addon actions has circular dependencies, which break when converted to esm
-    // possibly obsolete when https://github.com/rollup/rollup/pull/3295 is applied to commonjs
-    {
-      transform(code, id) {
-        if (
-          id ===
-          require.resolve(
-            "@storybook/addon-actions/dist/containers/ActionLogger/index.js"
-          )
-        ) {
-          return code.replace(
-            'var _ = require("../..");',
-            'var _ = require("../../constants");'
-          );
-        }
-        return null;
-      },
-    },
-
     // OPTIMIZATION: filter out core-js polyfills to reduce bundle size
     filterModules(["node_modules/core-js"]),
 
@@ -142,7 +123,8 @@ export default {
     // the majority of the storybook ecosystem is es5, but some are not. we compile all to es5, so that we can skip
     // compiling it by users. when storybook dependencies start becoming non-es5, we can consider making a separate
     // non-es5 build
-    babel.generated({
+    babel({
+      babelHelpers: 'bundled',
       presets: [
         [
           "@babel/env",
