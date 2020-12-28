@@ -23,7 +23,7 @@ export default {
     manager: "__generated__/manager.js",
   },
 
-  // preserveEntrySignatures: 'allow-extension',
+  preserveEntrySignatures: 'allow-extension',
 
   output: {
     dir: ".",
