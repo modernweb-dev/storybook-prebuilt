@@ -1,1 +1,0 @@
-{"version":3,"file":"blocks.js","sources":["../node_modules/@storybook/addon-docs/blocks.js"],"sourcesContent":["module.exports = require('./dist/blocks');\n"],"names":["require$$0"],"mappings":"+mBAAA,MAAiBA"}
