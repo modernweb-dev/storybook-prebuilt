@@ -24,15 +24,11 @@ jobs:
           node-version: 14.x
           registry-url: 'https://registry.npmjs.org'
 
-      - name: Get yarn cache directory path
-        id: yarn-cache-dir-path
-        run: echo "::set-output name=dir::$(yarn cache dir)"
-
       - name: Install Dependencies
-        run: yarn --frozen-lockfile
+        run: npm ci
 
       - name: Build package
-        run: yarn build
+        run: npm run build
 
       - name: Setup Git User
         run: |
