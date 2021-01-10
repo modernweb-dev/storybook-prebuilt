@@ -9,6 +9,10 @@
   "license": "MIT",
   "main": "index.js",
   "module": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/modernweb-dev/storybook-prebuilt.git"
+  },
   "scripts": {
     "start:wc": "wds --node-resolve --app-index demo/wc/index.html --open",
     "start:preact": "wds --node-resolve --app-index demo/preact/index.html --open",
