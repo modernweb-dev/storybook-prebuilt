@@ -32,7 +32,7 @@
     "@mdx-js/react": "1.6.19",
     "@rollup/plugin-alias": "3.1.1",
     "@rollup/plugin-babel": "5.2.2",
-    "@rollup/plugin-commonjs": "17.0.0",
+    "@rollup/plugin-commonjs": "17.1.0",
     "@rollup/plugin-inject": "4.0.2",
     "@rollup/plugin-json": "4.1.0",
     "@rollup/plugin-node-resolve": "11.0.1",
