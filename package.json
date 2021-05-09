@@ -44,7 +44,7 @@
     "@storybook/theming": "6.1.11",
     "@storybook/web-components": "6.1.11",
     "@web/dev-server": "0.0.19",
-    "cjs-module-lexer": "1.0.0",
+    "cjs-module-lexer": "1.2.1",
     "deepmerge": "4.2.2",
     "htm": "3.0.4",
     "lit-element": "2.4.0",
