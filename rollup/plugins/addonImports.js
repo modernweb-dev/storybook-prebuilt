@@ -1,4 +1,4 @@
-const getPresets = require("@storybook/core/dist/server/presets.js").default;
+const { getPresets } = require("@storybook/core-common/dist/cjs/presets.js");
 
 const addons = ["@storybook/addon-essentials"];
 
@@ -33,7 +33,7 @@ export function addonImports(framework) {
 
       if (id.startsWith("__generated__/manager.js")) {
         const managerImports = imports.manager
-          .map((i) => `import "${i}";`)
+          .map((i) => `import "${i.replace('/esm/','/cjs/')}";`)
           .join("");
         return `export * from '${managerPath}'; ${managerImports}`;
       }
@@ -46,7 +46,7 @@ export function addonImports(framework) {
         const previewImports = imports.preview
           .map(
             (path, i) =>
-              `import * as preset${i} from "${path}";registerPreviewEntry(preset${i});`
+              `import * as preset${i} from "${path.replace('/esm/','/cjs/')}";registerPreviewEntry(preset${i});`
           )
           .join("");
 

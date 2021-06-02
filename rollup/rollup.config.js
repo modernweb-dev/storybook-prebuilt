@@ -33,7 +33,7 @@ export default {
   },
 
   // make sure lit-html is imported at runtime and not bundled
-  external: ["lit-html"],
+  external: id => /lit-html/.test(id),
 
   plugins: [
     addonImports("web-components"),
@@ -65,6 +65,7 @@ export default {
     replace({
       values: {
         "process.env.NODE_ENV": "____environment____",
+        "module && module.hot && module.hot.decline": "false",
       },
     }),
     // 2) then replace the variable with a unique import, this allows rollup
@@ -111,10 +112,49 @@ export default {
     // lit-html is imported by @storybook/web-components as a default import,
     // which is incorrect
     {
-      name: "lit-html-renamer",
+      name: "lit-html-renamer-old",
       renderChunk(code) {
         return {
           code: code.replace("import _litHtml", "import * as _litHtml"),
+          map: null,
+        };
+      },
+    },
+    /**
+     * import require$$2, { render } from 'lit-html';
+import { w as window_1, g as getAugmentedNamespace } from './dist/storybook-prebuilt-42528445.js';
+import { _ as _default } from './dist/storybook-prebuilt-1e30437c.js';
+import { isTemplateResult } from 'lit-html/directive-helpers.js';
+     */
+    {
+      name: "lit-html-renamer-new",
+      renderChunk(code) {
+        if (/lit-html/.test(code)) {
+          console.log(code);
+        }
+        return {
+          code: code.replace(/import (\S*), { render } from 'lit-html';/, "import * as $1 from 'lit-html';import { render } from 'lit-html';"),
+          map: null,
+        };
+      },
+    },
+    {
+      name: "lit-html-renamer-new-2",
+      renderChunk(code) {
+        if (/lit-html/.test(code)) {
+          console.log(code);
+        }
+        return {
+          code: code.replace(/import \* as (\S*), { render } from 'lit-html';/, "import * as $1 from 'lit-html';import { render } from 'lit-html';"),
+          map: null,
+        };
+      },
+    },
+    {
+      name: "lit-html-directive-helpers-renamer-new",
+      renderChunk(code) {
+        return {
+          code: code.replace(/import { isTemplateResult } from 'lit-html\/directive-helpers\.js';/, "import * as $1 from 'lit-html/directive-helpers.js';import { isTemplateResult } from 'lit-html/directive-helpers.js';"),
           map: null,
         };
       },
