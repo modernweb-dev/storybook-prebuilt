@@ -120,18 +120,9 @@ export default {
         };
       },
     },
-    /**
-     * import require$$2, { render } from 'lit-html';
-import { w as window_1, g as getAugmentedNamespace } from './dist/storybook-prebuilt-42528445.js';
-import { _ as _default } from './dist/storybook-prebuilt-1e30437c.js';
-import { isTemplateResult } from 'lit-html/directive-helpers.js';
-     */
     {
       name: "lit-html-renamer-new",
       renderChunk(code) {
-        if (/lit-html/.test(code)) {
-          console.log(code);
-        }
         return {
           code: code.replace(/import (\S*), { render } from 'lit-html';/, "import * as $1 from 'lit-html';import { render } from 'lit-html';"),
           map: null,
@@ -141,9 +132,6 @@ import { isTemplateResult } from 'lit-html/directive-helpers.js';
     {
       name: "lit-html-renamer-new-2",
       renderChunk(code) {
-        if (/lit-html/.test(code)) {
-          console.log(code);
-        }
         return {
           code: code.replace(/import \* as (\S*), { render } from 'lit-html';/, "import * as $1 from 'lit-html';import { render } from 'lit-html';"),
           map: null,
