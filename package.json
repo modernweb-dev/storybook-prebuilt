@@ -1,6 +1,6 @@
 {
   "name": "@web/storybook-prebuilt",
-  "version": "0.1.21-alpha.9",
+  "version": "0.1.21",
   "publishConfig": {
     "access": "public"
   },
