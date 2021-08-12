@@ -47,7 +47,7 @@
     "@web/dev-server": "0.0.19",
     "cjs-module-lexer": "1.0.0",
     "deepmerge": "4.2.2",
-    "htm": "3.0.4",
+    "htm": "3.1.0",
     "lit-element": "2.5.1",
     "lit-html": "1.4.1",
     "magic-string": "0.25.7",
