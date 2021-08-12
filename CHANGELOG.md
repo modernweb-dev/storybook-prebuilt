@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file. See [standa
 
 ### [0.1.24](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.23...v0.1.24) (2021-08-24)
 
+### [0.1.24-alpha.1](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.23...v0.1.24-alpha.1) (2021-08-12)
+
+### [0.1.24-alpha.0](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.23...v0.1.24-alpha.0) (2021-08-12)
+
 ### [0.1.23](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.22...v0.1.23) (2021-08-12)
 
 ### [0.1.22](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.21...v0.1.22) (2021-07-27)
