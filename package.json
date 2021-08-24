@@ -44,7 +44,7 @@
     "@storybook/preact": "^6.3.7",
     "@storybook/theming": "^6.3.7",
     "@storybook/web-components": "^6.3.7",
-    "@web/dev-server": "0.0.19",
+    "@web/dev-server": "0.1.22",
     "cjs-module-lexer": "1.0.0",
     "deepmerge": "4.2.2",
     "htm": "3.0.4",
