@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.26-alpha.0](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.25...v0.1.26-alpha.0) (2021-08-25)
+
 ### [0.1.25](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.24...v0.1.25) (2021-08-25)
 
 ### [0.1.24](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.23...v0.1.24) (2021-08-24)
