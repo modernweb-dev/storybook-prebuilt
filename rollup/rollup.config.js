@@ -90,7 +90,9 @@ export default {
     filterModules(["node_modules/core-js"]),
 
     // polyfill nodejs globals such as `global` and `process`
-    nodeGlobals(),
+    nodeGlobals({
+      exclude: ['**/@storybook/components/dist/esm/blocks/Preview.js']
+    }),
 
     // polyfill nodejs modules, such as `require('util')`
     builtins(),
