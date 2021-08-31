@@ -18,6 +18,7 @@ import entrypoints from './plugins/entrypoints.js';
 
 export default {
   input: {
+    "client-api": "src/client-api.js",
     "web-components": "src/web-components.js",
     preact: "src/preact.js",
     manager: "__generated__/manager.js",
