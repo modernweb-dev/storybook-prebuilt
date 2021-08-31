@@ -26,5 +26,6 @@
 /addon-docs*
 /addons.js*
 /api.js*
+/client-api.js*
 /core-events*
 /theming*
