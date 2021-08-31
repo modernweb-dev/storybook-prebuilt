@@ -8,6 +8,7 @@ export {
   storiesOf,
   setAddon,
   setCustomElements,
+  setCustomElementsManifest,
   addDecorator,
   addParameters,
   configure,
