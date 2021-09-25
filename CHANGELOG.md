@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.26](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.25...v0.1.26) (2021-09-25)
+
+
+### Bug Fixes
+
+* include addArgsEnhancer when processing preview entries ([2e907d5](https://github.com/modernweb-dev/storybook-prebuilt/commit/2e907d5eb78d2ab79b621c117b34dedf70f1a568))
+
 ### [0.1.25](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.24...v0.1.25) (2021-08-25)
 
 ### [0.1.24](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.23...v0.1.24) (2021-08-24)
