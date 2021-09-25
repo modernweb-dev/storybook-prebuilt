@@ -6,6 +6,11 @@ export default {
     backgroundColor: { control: 'color' },
     onClick: { action: 'onClick' },
   },
+  parameters: {
+    actions: {
+      handles: [ 'click' ]
+    }
+  }
 };
 
 const Template = args => Button(args);
