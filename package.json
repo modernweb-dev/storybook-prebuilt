@@ -1,6 +1,6 @@
 {
   "name": "@web/storybook-prebuilt",
-  "version": "0.1.27-alpha.2",
+  "version": "0.1.27-alpha.3",
   "publishConfig": {
     "access": "public"
   },
@@ -40,12 +40,12 @@
     "@rollup/plugin-json": "4.1.0",
     "@rollup/plugin-node-resolve": "13.0.6",
     "@rollup/plugin-replace": "3.0.0",
-    "@storybook/addon-essentials": "6.4.0-rc.6",
-    "@storybook/addons": "6.4.0-rc.6",
-    "@storybook/api": "6.4.0-rc.6",
-    "@storybook/preact": "6.4.0-rc.6",
-    "@storybook/theming": "6.4.0-rc.6",
-    "@storybook/web-components": "6.4.0-rc.6",
+    "@storybook/addon-essentials": "6.4.0",
+    "@storybook/addons": "6.4.0",
+    "@storybook/api": "6.4.0",
+    "@storybook/preact": "6.4.0",
+    "@storybook/theming": "6.4.0",
+    "@storybook/web-components": "6.4.0",
     "@web/dev-server": "0.1.28",
     "@web/dev-server-rollup": "0.3.13",
     "cjs-module-lexer": "1.2.2",
