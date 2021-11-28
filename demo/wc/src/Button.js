@@ -40,7 +40,7 @@ const styles = html`
  */
 export const Button = ({ primary, backgroundColor, size, label, onClick }) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
-
+  
   return html`
     ${styles}
     <button

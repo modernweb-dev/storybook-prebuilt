@@ -92,7 +92,10 @@ export default {
 
     // polyfill nodejs globals such as `global` and `process`
     nodeGlobals({
-      exclude: ['**/@storybook/components/dist/esm/blocks/Preview.js']
+      exclude: [
+        '**/@storybook/components/dist/esm/blocks/Preview.js',
+        '**/@storybook/preview-web/dist/esm/PreviewWeb.js',
+      ]
     }),
 
     // polyfill nodejs modules, such as `require('util')`
