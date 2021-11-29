@@ -55,7 +55,7 @@
     "lit-element": "3.0.2",
     "lit-html": "2.0.2",
     "magic-string": "0.25.7",
-    "preact": "^10.5.15",
+    "preact": "^10.6.2",
     "rollup": "^2.60.1",
     "rollup-plugin-node-builtins": "^2.1.2",
     "rollup-plugin-node-globals": "^1.4.0",
