@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.27-alpha.3](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.27-alpha.2...v0.1.27-alpha.3) (2021-11-28)
+
+### [0.1.27-alpha.2](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.27-alpha.1...v0.1.27-alpha.2) (2021-11-23)
+
+### [0.1.27-alpha.1](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.27-alpha.0...v0.1.27-alpha.1) (2021-10-30)
+
+### [0.1.27-alpha.0](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.26...v0.1.27-alpha.0) (2021-09-25)
+
+
+### Features
+
+* export setCustomElementsManifest ([963dd7c](https://github.com/modernweb-dev/storybook-prebuilt/commit/963dd7cd347b2d06e95905dc69f738ecf59a3f75))
+* expose client-api ([ed3cd24](https://github.com/modernweb-dev/storybook-prebuilt/commit/ed3cd240127addac430b5801cd224c4a1be532a6))
+
 ### [0.1.26](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.25...v0.1.26) (2021-09-25)
 
 

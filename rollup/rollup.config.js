@@ -18,6 +18,7 @@ import entrypoints from './plugins/entrypoints.js';
 
 export default {
   input: {
+    "client-api": "src/client-api.js",
     "web-components": "src/web-components.js",
     preact: "src/preact.js",
     manager: "__generated__/manager.js",
@@ -90,7 +91,12 @@ export default {
     filterModules(["node_modules/core-js"]),
 
     // polyfill nodejs globals such as `global` and `process`
-    nodeGlobals(),
+    nodeGlobals({
+      exclude: [
+        '**/@storybook/components/dist/esm/blocks/Preview.js',
+        '**/@storybook/preview-web/dist/esm/PreviewWeb.js',
+      ]
+    }),
 
     // polyfill nodejs modules, such as `require('util')`
     builtins(),
