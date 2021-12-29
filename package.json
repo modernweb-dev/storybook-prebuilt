@@ -39,7 +39,7 @@
     "@rollup/plugin-inject": "4.0.3",
     "@rollup/plugin-json": "4.1.0",
     "@rollup/plugin-node-resolve": "13.1.1",
-    "@rollup/plugin-replace": "3.0.0",
+    "@rollup/plugin-replace": "3.0.1",
     "@storybook/addon-essentials": "6.4.9",
     "@storybook/addon-docs": "6.4.9",
     "@storybook/addons": "6.4.9",
