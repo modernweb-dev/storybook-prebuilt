@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.32](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.31...v0.1.32) (2021-12-29)
+
+
+### Bug Fixes
+
+* require React locally to override peerdependency resolutions ([371aa4b](https://github.com/modernweb-dev/storybook-prebuilt/commit/371aa4be6b04a734e54c344500a1263817e81560))
+
 ### [0.1.31](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.29...v0.1.31) (2021-12-18)
 
 ### [0.1.29](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.28...v0.1.29) (2021-12-18)
