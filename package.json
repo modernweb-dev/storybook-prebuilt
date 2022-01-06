@@ -53,7 +53,7 @@
     "deepmerge": "4.2.2",
     "htm": "3.1.0",
     "lit": "2.0.2",
-    "lit-element": "3.0.2",
+    "lit-element": "3.1.1",
     "lit-html": "2.0.2",
     "magic-string": "0.25.7",
     "preact": "10.6.4",
