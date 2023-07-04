@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.35](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.34...v0.1.35) (2023-07-04)
+
+
+### Features
+
+* export create-addon ([e2b8dcf](https://github.com/modernweb-dev/storybook-prebuilt/commit/e2b8dcfb9b21fede12b7406f919d9494245bb0c8))
+
 ### [0.1.34](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.33...v0.1.34) (2022-02-26)
 
 ### [0.1.33](https://github.com/modernweb-dev/storybook-prebuilt/compare/v0.1.32...v0.1.33) (2022-01-10)
