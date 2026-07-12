@@ -64,6 +64,6 @@
     "rollup-plugin-node-globals": "1.4.0",
     "rollup-plugin-terser": "7.0.2",
     "rollup-plugin-visualizer": "5.5.2",
-    "standard-version": "9.3.2"
+    "commit-and-tag-version": "9.5.0"
   }
 }
